@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CoursesFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/bg_gradient"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TableLayout
+                android:id="@+id/tableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="75dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_course1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:visibility="visible"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/img_curs1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="170dp"
+                                    android:background="@drawable/ic_cursfinanciarvector_01" />
+
+                                <ImageView
+                                    android:id="@+id/logoSdV"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:layout_gravity="top|right"
+                                    android:layout_margin="10dp"
+                                    android:src="@drawable/logosdv1" />
+                            </FrameLayout>
+
+                            <ProgressBar
+                                android:id="@+id/pb_course1"
+                                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="10dp"
+                                android:max="100"
+                                android:visibility="invisible" />
+
+                            <TextView
+                                android:id="@+id/txt_curs1"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_gravity="bottom"
+                                android:fontFamily="@font/tommy_soft"
+                                android:layout_marginBottom="5dp"
+                                android:text="Educatie financiara"
+                                android:textAlignment="center"
+                                android:textSize="17sp"
+                                tools:ignore="RtlCompat" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_course2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:visibility="visible"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/img_curs2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="170dp"
+                                    android:background="@drawable/ic_workinprogressfilled_01" />
+                            </FrameLayout>
+
+                            <ProgressBar
+                                android:id="@+id/pb_course2"
+                                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="10dp"
+                                android:max="100"
+                                android:visibility="invisible" />
+
+                            <TextView
+                                android:id="@+id/txt_curs2"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_gravity="bottom"
+                                android:fontFamily="@font/tommy_soft"
+                                android:layout_marginBottom="5dp"
+                                android:text="W.I.P"
+                                android:textAlignment="center"
+                                android:textSize="17sp"
+                                tools:ignore="RtlCompat" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cocogoose_regular"
+                android:text="Cursuri"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="@+id/tableLayout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.03" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

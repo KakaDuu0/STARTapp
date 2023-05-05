@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/popup_element"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@drawable/popup_shape"
+    android:orientation="vertical"
+    android:padding="3dp">
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/tommy_soft"
+        android:text="Trimite un FeedBack!"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+
+    <EditText
+        android:id="@+id/etText"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/rounded_textedit"
+        android:hint="Scrie-ti aici gandurile :)"
+        android:paddingLeft="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/grey_lightdark"
+        android:layout_marginVertical="10dp"
+        android:gravity="top|left"
+        android:lines="6"
+        android:scrollbars="vertical"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="4dp"
+        >
+
+        <Button
+            android:id="@+id/btnChange"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/btnCancel"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/btn_popup1"
+            app:backgroundTint="@null"
+            android:text="Trimite"
+            android:fontFamily="@font/cocogoose_regular"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Inapoi"
+            android:layout_marginLeft="30dp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/cocogoose_regular"
+            android:textSize="16sp"
+            android:background="@drawable/btn_popup1"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

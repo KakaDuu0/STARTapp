@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    tools:context=".GetStartedPage">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.153"
+        android:src="@drawable/logobig" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:background="@drawable/rounded_textedit"
+        android:ems="10"
+        android:fontFamily="@font/tommy_soft"
+        android:hint="Parola"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etName"
+        app:layout_constraintVertical_bias="0.042" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:background="@drawable/rounded_textedit"
+        android:ems="10"
+        android:fontFamily="@font/tommy_soft"
+        android:hint="Nume Utilizator / Email"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.039" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="190dp"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_popup1"
+        app:backgroundTint="@null"
+        android:fontFamily="@font/cocogoose_regular"
+        android:text="Autentificare"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb_rememberme"
+        app:layout_constraintVertical_bias="0.07"
+        tools:text="Login" />
+
+    <Button
+        android:id="@+id/btnCreate"
+        android:layout_width="190dp"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="15dp"
+        android:background="@drawable/btn_popup1"
+        app:backgroundTint="@null"
+        android:text="Creeaza Cont"
+        android:fontFamily="@font/cocogoose_regular"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:layout_constraintVertical_bias="0.095" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/tommy_soft"
+        android:text="Nu ai cont?"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin"
+        app:layout_constraintVertical_bias="0.082" />
+
+    <CheckBox
+        android:id="@+id/cb_rememberme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/tommy_soft"
+        android:text="Tine-ma minte"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPassword"
+        app:layout_constraintVertical_bias="0.036" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

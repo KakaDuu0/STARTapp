@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog" >
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:layout_height">200dp</item>
+    </style>
+    <style name="ExplanationTheme" parent="Theme.AppCompat.Light.Dialog" >
+        <item name="windowNoTitle">true</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:windowBackground">@null</item>
+    </style>
+</resources>

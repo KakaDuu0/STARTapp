@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <item android:id="@+id/profile"
+      android:enabled="true"
+      android:icon="@drawable/icon_selectorprofile"
+      android:title="Profil" />
+  <item android:id="@+id/courses"
+      android:enabled="true"
+      android:icon="@drawable/icon_selectorcourse"
+      android:title="Cursuri" />
+  <item android:id="@+id/leaderboard"
+      android:enabled="true"
+      android:icon="@drawable/icon_selectorleaderboard"
+      android:title="Clasament" />
+  <item android:id="@+id/settings"
+      android:enabled="true"
+      android:icon="@drawable/icon_selectorsettings"
+      android:title="Setari" />
+</menu>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context=".SettingsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@drawable/bg_gradient"
+            android:translationZ="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:src="@drawable/ic_settingsfilled_01"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.25" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/cocogoose_regular"
+                android:text="Settings"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/lightgrey"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
+            app:layout_constraintVertical_bias="1.0">
+
+            <TextView
+                android:id="@+id/tv_notifs"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginVertical="10dp"
+                android:background="@color/white"
+                android:fontFamily="@font/tommy_soft"
+                android:padding="10dp"
+                android:text="Notificari"
+                android:textSize="25sp"
+                android:translationZ="5dp"
+                app:layout_constraintEnd_toStartOf="@+id/sw_notifs"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/sw_notifs"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:checked="true"
+                android:paddingRight="10dp"
+                android:translationZ="5dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_notifs"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tv_notifs" />
+
+            <TextView
+                android:id="@+id/tv_username"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginVertical="10dp"
+                android:background="@color/white"
+                android:fontFamily="@font/tommy_soft"
+                android:padding="10dp"
+                android:text="Schimbare nume utilizator"
+                android:textSize="25sp"
+                android:translationZ="5dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_notifs" />
+
+            <TextView
+                android:id="@+id/tv_password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginVertical="10dp"
+                android:background="@color/white"
+                android:fontFamily="@font/tommy_soft"
+                android:padding="10dp"
+                android:text="Schimbare parola"
+                android:textSize="25sp"
+                android:translationZ="5dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_username" />
+
+            <TextView
+                android:id="@+id/tv_logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:background="@color/white"
+                android:fontFamily="@font/tommy_soft"
+                android:padding="10dp"
+                android:text="Log Out"
+                android:textSize="25sp"
+                android:translationZ="5dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_password" />
+
+            <TextView
+                android:id="@+id/tv_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginVertical="10dp"
+                android:background="@color/white"
+                android:fontFamily="@font/tommy_soft"
+                android:padding="10dp"
+                android:text="Trimite FeedBack"
+                android:textSize="25sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_logout" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
